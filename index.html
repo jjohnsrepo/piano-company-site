@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Piano Co</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_" />
+
+</head>
+<body>
+	<div class="container">
+		<h1 class="swoop">Welcome to my studio</h1>
+	<!-- header -->
+	<section id="header">
+		<div id="enter">
+			<h1 class="entrance">Justin Piano Studio</h1>
+			<span id="piano" class="material-symbols-outlined entranceIcons">piano</span>
+			<span id='pause' onclick="pause()" class="material-symbols-outlined entranceIcons">pause_circle</span>
+			<div id="pause_text" class="entrance">Click here to pause and unpause background</div>
+			<span id="unpause" class="material-symbols-outlined entrance" onclick="unpause()">play_arrow</span>
+		</div>
+		<hr class="entrance" style="color:white">
+	</section>	
+	
+
+	<div id="page2" class="page2 entrance">
+		<div id="about_me" onclick="showSection('aboutMeText')">About Me</div>
+		<div id="recordings" onclick="showSection('recordingsText')">Recordings</div>
+		<div id="upcoming_events" onclick="showSection('upcomingEventsText')">Upcoming Events</div>
+		<div id="lessons" onclick="showSection('lessonsText')">Lessons</div>
+		<div id="contact_me" onclick="showSection('contactMeText')">Contact Me</div>
+	</div>
+
+
+		<!-- Body text -->
+	<div class="description_holder">
+		<div id="aboutMeText">	
+			<img id='img7' src="media/7.jpeg" height=300px>
+			<p>My name is Justin Johnson. My piano journy started when I was 16 years old. After being ispired by other musical artists,
+				I started to teach myself piano via youtube. Years later and I am now 22 years old with a continued passion. 
+			</p>
+		</div>
+		<div id="recordingsText">
+			<h2>Recordings</h2>
+				<div class="recording-grid">
+					<div class="vidTitle">
+						<iframe  height="190px"
+							src="https://www.youtube.com/embed/qtrs9q45rtY"
+							title="YouTube video player"
+							frameborder="0"
+							allowfullscreen
+							>
+							</iframe>
+						<h1>I will walk with Jesus</h1>
+					</div>
+					<div class="vidTitle">
+						<iframe  height="190px"
+						src="https://www.youtube.com/embed/EmxK42jG1oE"
+						title="YouTube video player"
+						frameborder="0"
+						allowfullscreen
+						>
+						</iframe>
+						<h1>Chopin Polonaise op. 53 "Heroic"
+						</h1>
+					</div>
+					<div class="vidTitle">
+						<iframe  height="190px"
+							src="https://www.youtube.com/embed/n1bw68N-D5k"
+							title="YouTube video player"
+							frameborder="0"
+							allowfullscreen
+							>
+							</iframe>
+						<h1>I often go walking / Clair de lune</h1>
+					</div>
+					<div class="vidTitle">
+						<iframe  height="190px"
+						src="https://www.youtube.com/embed/Z_XFvOhOGe4"
+						title="YouTube video player"
+						frameborder="0"
+						allowfullscreen
+						>
+						</iframe>
+						<h1>Rachmaninoff</h1>
+					</div>
+				</div>
+				
+		</div>
+		<div id="upcomingEventsText">
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+			 Ad dignissimos odit fugiat deserunt, quos vel aspernatur veritatis soluta odio provident ducimus, itaque mollitia corporis, neque optio.
+			  Quae earum vitae itaque!</p>
+		</div>
+		<div id="lessonsText">
+			<div class="lessonsContainer">
+				<h2>Piano lessons with me</h2>
+				<p>I teach piano lessons both virtually and in person to any age. My experience comes from both traditional 
+					education and real world experience. I would love to meet with you to give a free consultation.</p>
+				<h3>Prices: </h3>
+				<ul>
+					<li>30 minutes - $20</li>
+					<li>60 minutes - $40</li>
+				</ul>
+			</div>
+		</div>	
+		<div id="contactMeText">
+			<h2>Lets get in touch</h2>
+			<p>Send me an email or text and lets begin your piano journy</p>
+			<ul>
+				<li>Email: <a href="mailto:johnsonjustin983@gmail.com">johnsonjustin983@gmail.com</a></li>
+				<li>Phone number: 775-455-2245</li>
+			</ul>
+		</div>	
+	</div>
+	</div>
+</body>
+<script src="script.js"></script>
+</html>
