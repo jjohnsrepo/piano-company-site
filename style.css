@@ -92,7 +92,7 @@ body {
   background-attachment: fixed;
   background-size: cover; 
   color:white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px gray;
 }
 
 #piano{
@@ -227,37 +227,79 @@ cursor:grab;
 
 
 @media only screen and (max-width: 870px) {
+	.swoop {
+		position: absolute;
+		top: 30%;
+		left: 33%;
+		scale:0.1;
+		opacity: 0;
+		animation: swoopIn 4s cubic-bezier(0.68, -0.6, 0.32, 1.6) forwards,
+				   flyOut 0.3s cubic-bezier(0.7, 0, 1, 1) 4s forwards;
+	  }
+	  
+	  @keyframes swoopIn {
+		100% {
+		  scale:1;
+		  opacity: 1;
+		  left: 30%;
+		}
+	  }
+	  
+	  @keyframes flyOut {
+		100%{
+		  scale:4;
+		  top: 110%;
+		  opacity: 0;
+		}
+	  }
+	  .entranceIcons{
+		animation: entranceIcons .5s linear 4s 1 forwards;
+		opacity:0;
+	}
+	@keyframes entranceIcons{
+		1%{
+			scale:0;
+			opacity:.5;
+		}
+		50%{
+			scale:.5;
+		}
+		100%{
+			scale:2;
+			opacity:1;
+		}
+	}
+
+
+
+
+
 	#pause_text {
 		display: none;
 	}
 
 	#piano{
 		position: absolute;
-		top: 60px;
-		right: 50px;
+		top: 30px;
+		right: 30px;
 		scale:3 3;
+		
 	}
 	#pause{
 		cursor:pointer;
 		position: fixed;
-		top: 60px;
-		left:50px;
+		top: 30px;
+		left:30px;
 		scale: 3 3;
+		
 	}
 	#unpause{
 		cursor:pointer;
 		position: fixed;
-		top: 60px;
-		left:50px;
+		top: 30px;
+		left:30px;
 		scale: 3 3;
-		display:none;
-		}
-	}
 	
-	body {
-  background-image: url("media/mickey2.jpeg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: contain;
-  color:white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+		}
+	
+	}
