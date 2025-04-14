@@ -253,3 +253,11 @@ cursor:grab;
 		display:none;
 		}
 	}
+	
+	body {
+  background-image: url("media/mickey2.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  color:white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}

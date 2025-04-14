@@ -22,12 +22,14 @@ function showSection(divID) {
 
 
 function pause() {
+	document.getElementById("pause").classList.remove('entranceIcons');
     document.body.style.backgroundImage = "url('media/mickey.jpeg')";
     document.getElementById('pause').style.display='none';
     document.getElementById('unpause').style.display='block';
 }
 
 function unpause(){
+		document.getElementById("unpause").classList.remove('entranceIcons')
         document.body.style.backgroundImage = "url('media/mickey.gif')";
         document.getElementById('pause').style.display='block';
         document.getElementById('unpause').style.display='none';
