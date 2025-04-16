@@ -1,28 +1,28 @@
 .swoop {
 	position: absolute;
-	top: 30%;
-	left: 33%;
-	scale:0.1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.1);
 	opacity: 0;
 	animation: swoopIn 4s cubic-bezier(0.68, -0.6, 0.32, 1.6) forwards,
 			   flyOut 0.3s cubic-bezier(0.7, 0, 1, 1) 4s forwards;
-  }
+}
+
   
-  @keyframes swoopIn {
+@keyframes swoopIn {
 	100% {
-	  scale:3;
-	  opacity: 1;
-	  left: 30%;
+		transform: translate(-50%, -50%) scale(3);
+		opacity: 1;
 	}
-  }
-  
-  @keyframes flyOut {
-	100%{
-	  scale:6;
-	  top: 110%;
-	  opacity: 0;
+}
+@keyframes flyOut {
+	100% {
+		transform: translate(-50%, -50%) scale(6);
+		top: 110%;
+		opacity: 0;
 	}
-  }
+}
+
   
 
 
@@ -92,7 +92,7 @@ body {
   background-attachment: fixed;
   background-size: cover; 
   color:white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px gray;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #piano{
@@ -229,29 +229,17 @@ cursor:grab;
 @media only screen and (max-width: 870px) {
 	.swoop {
 		position: absolute;
-		top: 30%;
-		left: 33%;
-		scale:0.1;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0.1);
 		opacity: 0;
 		animation: swoopIn 4s cubic-bezier(0.68, -0.6, 0.32, 1.6) forwards,
 				   flyOut 0.3s cubic-bezier(0.7, 0, 1, 1) 4s forwards;
-	  }
+	}
+	
 	  
-	  @keyframes swoopIn {
-		100% {
-		  scale:1;
-		  opacity: 1;
-		  left: 30%;
-		}
-	  }
+	
 	  
-	  @keyframes flyOut {
-		100%{
-		  scale:4;
-		  top: 110%;
-		  opacity: 0;
-		}
-	  }
 	  .entranceIcons{
 		animation: entranceIcons .5s linear 4s 1 forwards;
 		opacity:0;
