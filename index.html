@@ -6,16 +6,20 @@
     <title>Justin Piano Studio</title>
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_" />
-
 </head>
 <body>
+	<audio id="myAudio" autoplay>
+		<source src="audio.mp3" type="audio/mpeg">
+	  </audio>
+	  
+	  
 	<div class="container">
 		<h1 class="swoop">Welcome to my studio</h1>
 	<!-- header -->
 	<section id="header">
 		<div id="enter">
 			<h1 class="entrance">Justin Piano Studio</h1>
-			<span id="piano" class="material-symbols-outlined entranceIcons">piano</span>
+			<span id="piano" class="material-symbols-outlined entranceIcons" onclick="piano()">piano</span>
 			<span id='pause' onclick="pause()" class="material-symbols-outlined entranceIcons">pause_circle</span>
 			<div id="pause_text" class="entrance">Click here to pause and unpause background</div>
 			<span id="unpause" class="material-symbols-outlined" onclick="unpause()">play_arrow</span>
@@ -117,7 +121,15 @@
 			<ul>
 				<li>Email: <a href="mailto:johnsonjustin983@gmail.com">johnsonjustin983@gmail.com</a></li>
 				<li>Phone number: 775-455-2245</li>
+				<li>Youtube: <a href="https://www.youtube.com/channel/UCxxmTvadfoBR6OEH8Q2KFXw" target="_blank">My channel</a></li>
 			</ul>
+			<h2>Or</h2>
+			<p>Send me a message down below (page will redirect): </p>
+			<form action="https://formspree.io/f/xanegkle" method="POST" target="_blank">
+				<input type="text" name="message" id="messageInput" placeholder="Your message here" required>
+				<button type="submit">Send</button>
+			  </form>
+			  
 		</div>	
 	</div>
 	</div>

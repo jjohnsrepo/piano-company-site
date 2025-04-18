@@ -26,6 +26,7 @@ function pause() {
     document.body.style.backgroundImage = "url('media/mickey.jpeg')";
     document.getElementById('pause').style.display='none';
     document.getElementById('unpause').style.display='block';
+    document.getElementById("myAudio").pause();
 }
 
 function unpause(){
@@ -33,4 +34,12 @@ function unpause(){
         document.body.style.backgroundImage = "url('media/mickey.gif')";
         document.getElementById('pause').style.display='block';
         document.getElementById('unpause').style.display='none';
+}
+
+function piano(){
+    document.getElementById('aboutMeText').style.display = 'none';
+    document.getElementById('recordingsText').style.display = 'none';
+    document.getElementById('upcomingEventsText').style.display = 'none';
+    document.getElementById('lessonsText').style.display = 'none';
+    document.getElementById('contactMeText').style.display = 'none';
 }
