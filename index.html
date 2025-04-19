@@ -8,27 +8,28 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_" />
 </head>
 <body>
-	<audio id="myAudio" autoplay>
-		<source src="audio.mp3" type="audio/mpeg">
-	  </audio>
-	  
-	  
+	<audio id="myAudio" src="media/audio.mp3"></audio>
+	  <div id="entryOverlay">
+		<button id="enterButton" class="enterButton">Click below to enter website</button>
+		<span id="entryPiano" class="material-symbols-outlined">piano</span>
+		<button class="enterButton">(Volume for best experience)</button>
+	  </div>
 	<div class="container">
-		<h1 class="swoop">Welcome to my studio</h1>
+		<h1 id = "WTS">Welcome to my studio</h1>
 	<!-- header -->
 	<section id="header">
 		<div id="enter">
-			<h1 class="entrance">Justin Piano Studio</h1>
-			<span id="piano" class="material-symbols-outlined entranceIcons" onclick="piano()">piano</span>
-			<span id='pause' onclick="pause()" class="material-symbols-outlined entranceIcons">pause_circle</span>
-			<div id="pause_text" class="entrance">Click here to pause and unpause background</div>
+			<h1 id = "JPS">Justin Piano Studio</h1>
+			<span id="piano" class="material-symbols-outlined" onclick="piano()">piano</span>
+			<span id='pause' onclick="pause()" class="material-symbols-outlined">pause_circle</span>
+			<div id="pause_text">Click here to pause and unpause background</div>
 			<span id="unpause" class="material-symbols-outlined" onclick="unpause()">play_arrow</span>
 		</div>
-		<hr class="entrance" style="color:white">
+		<hr id="HR" style="color:white">
 	</section>	
 	
 
-	<div id="page2" class="page2 entrance">
+	<div id="page2" class="page2">
 		<div id="about_me" onclick="showSection('aboutMeText')">About Me</div>
 		<div id="recordings" onclick="showSection('recordingsText')">Recordings</div>
 		<div id="upcoming_events" onclick="showSection('upcomingEventsText')">Upcoming Events</div>
@@ -41,6 +42,7 @@
 	<div class="description_holder">
 		<div id="aboutMeText">	
 			<img id='img7' src="media/7.jpg" height=300px>
+			<img id='img8' src="media/8.jpeg" height=300px>
 			<p>Hi, I’m Justin Johnson. I began my piano journey at age 16, inspired by the music of great artists and the passion they shared.
 				 I taught myself through YouTube and hours of daily practice. Now, at 22, that passion has only grown —
 				 and I’m excited to share it with others through performing, recording, and teaching.

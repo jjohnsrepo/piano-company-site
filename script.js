@@ -1,3 +1,19 @@
+document.getElementById("entryPiano").addEventListener("click",enterWebsite)
+
+function enterWebsite() {
+    document.getElementById("myAudio").play();
+    document.getElementById("myAudio").volume=0.1;
+    document.getElementById("entryOverlay").style.display = "none";
+    document.getElementById("enterButton").style.display = "none";
+    document.getElementById("WTS").className = "swoop";
+    document.getElementById("JPS").className = "entrance";
+    document.getElementById("pause_text").className = "entrance";
+    document.getElementById("piano").classList.add("entranceIcons");
+    document.getElementById("pause").classList.add("entranceIcons");
+    document.getElementById("page2").classList.add("entrance");
+    document.getElementById("HR").classList.add("entrance");
+  }
+  
 
 function showSection(divID) {
    
@@ -30,6 +46,7 @@ function pause() {
 }
 
 function unpause(){
+    document.getElementById("myAudio").play();
 		document.getElementById("unpause").classList.remove('entranceIcons')
         document.body.style.backgroundImage = "url('media/mickey.gif')";
         document.getElementById('pause').style.display='block';
