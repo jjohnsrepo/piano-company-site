@@ -1,4 +1,5 @@
 document.getElementById("entryPiano").addEventListener("click",enterWebsite)
+document.getElementById('skip').addEventListener("click", skip)
 
 function enterWebsite() {
     document.getElementById("myAudio").play();
@@ -59,4 +60,14 @@ function piano(){
     document.getElementById('upcomingEventsText').style.display = 'none';
     document.getElementById('lessonsText').style.display = 'none';
     document.getElementById('contactMeText').style.display = 'none';
+}
+
+
+function skip(){
+    document.getElementById("myAudio").play();
+	document.getElementById("myAudio").volume=0.1;
+	document.getElementById("entryOverlay").style.display = "none";
+    document.getElementById("enterButton").style.display = "none";
+
+	
 }

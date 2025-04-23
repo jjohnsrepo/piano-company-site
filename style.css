@@ -1,3 +1,4 @@
+
 #entryOverlay {
   position: fixed;
   top: 0;
@@ -18,11 +19,15 @@
 	top: 50%;
 	left: 50%;
 	scale:5;
+	transition:.2s;
+
 }
-#entryPiano:hover{
-scale:6;
-transition:.5s;
-cursor:pointer;
+	#entryPiano:hover{
+	scale:6;
+	transition:.2s;
+	cursor:pointer;	
+	
+
 }
 
 .enterButton {
@@ -32,6 +37,13 @@ cursor:pointer;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     border: none;
 	margin-top:10%;
+}
+
+
+.skip{
+	position:absolute;
+	top:5%;
+	background-color: none;
 }
 
 .swoop {
@@ -127,6 +139,7 @@ body {
   background-size: cover; 
   color:white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  height:100%;
 }
 
 #piano{
@@ -134,11 +147,12 @@ body {
 	top: 60px;
 	right: 50px;
 	scale: 4;
+	transition:.2s
 }
 #piano:hover{
 	cursor:pointer;
 	transform:scale(1.2);
-	transition:.5s;
+	transition:.2s;
 }
 
 #pause{
@@ -217,6 +231,10 @@ a:link, a:visited, a:hover, a:active {
 	background-color: transparent;
 	
   }
+  
+ #about_me, #recordings, #upcoming_events, #lessons, #contact_me{
+	 transition:.2s;
+ }
  
 #about_me:hover{
 scale:1.3 1.3;
@@ -264,6 +282,7 @@ cursor:grab;
 		
 	  }
 	
+	  
 
 @media only screen and (max-width: 870px) {
 
@@ -272,10 +291,11 @@ cursor:grab;
 		top: 50%;
 		left: 50%;
 		scale:3;
+		transition:.2s;
 	}
 	#entryPiano:hover{
 	scale:3.5;
-	transition:.5s;
+	transition:.2s;
 	cursor:pointer;
 	}
 	

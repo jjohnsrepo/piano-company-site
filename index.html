@@ -15,7 +15,9 @@
 		<img id="entryPiano" src="media/transparent.png"  width="30" height="30">
 
 		<button class="enterButton">(Use volume for best experience)</button>
+		<button id='skip' class='skip'>Click here to skip animations</button>
 	  </div>
+	  
 	<div class="container">
 		<h1 id = "WTS">Welcome to my studio</h1>
 	<!-- header -->
@@ -24,7 +26,7 @@
 			<h1 id = "JPS">Justin Piano Studio</h1>
 			<span id="piano" class="material-symbols-outlined" onclick="piano()">piano</span>
 			<span id='pause' onclick="pause()" class="material-symbols-outlined">pause_circle</span>
-			<div id="pause_text">Click here to pause and unpause background</div>
+			<div id="pause_text">Click here to pause and unpause background/music</div>
 			<span id="unpause" class="material-symbols-outlined" onclick="unpause()">play_arrow</span>
 		</div>
 		<hr id="HR" style="color:white">
@@ -129,10 +131,11 @@
 			</ul>
 			<h2>Or</h2>
 			<p>Send me a message down below (page will redirect): </p>
-			<form action="https://formspree.io/f/xanegkle" method="POST" target="_blank">
-				<input type="text" name="message" id="messageInput" placeholder="Your message here" required>
-				<button type="submit">Send</button>
-			  </form>
+			<form id="myform" action="https://formspree.io/f/xanegkle" method="POST" target="_blank">
+			  <input type="text" name="message" id="messageInput" required>
+			  <button type="submit">Send</button>
+			</form>
+
 			  
 		</div>	
 	</div>
