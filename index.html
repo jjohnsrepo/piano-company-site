@@ -13,11 +13,30 @@
 	  <div id="entryOverlay">
 		<button id="enterButton" class="enterButton">Click below to enter studio</button>
 		<img id="entryPiano" src="media/transparent.png"  width="30" height="30">
-
 		<button class="enterButton">(Use volume for best experience)</button>
-		<button id='skip' class='skip'>Click here to skip animations</button>
+		<div id='skip' class='skip'>Click here to skip animations</div>
 	  </div>
 	  
+
+	  <!-- the chatbot window -->
+	  <div id="chatbot" class="chatbot">
+		<div>Chat with a piano expert<br>here!</div>
+		<span id="chatIcon" class="material-symbols-outlined">chat</span>
+	  </div>
+	
+
+	  <div id="chatbot-container">
+		<div id="chat-header">Gemini Chat 🎹
+			<span id="closeChat" onclick="closeChat()"class="material-symbols-outlined">close</span>
+		</div>
+		<div id="chat"></div>
+		<div id="chat-input">
+		  <textarea id="prompt" rows="2" placeholder="Ask me about piano..."></textarea>
+		  <button id='myBtn' onclick="sendMessage()">Send</button>
+		</div>
+	  </div>
+
+
 	<div class="container">
 		<h1 id = "WTS">Welcome to my studio</h1>
 	<!-- header -->
@@ -45,7 +64,8 @@
 		<!-- Body text -->
 	<div class="description_holder">
 		<div id="aboutMeText">	
-			<img id='img7' src="media/7.jpg" height=300px>
+			<img id='img7' src="media/7.jpg" height=300px style="filter:grayscale(100)">
+			<img id='img9' src="media/9.jpeg" height=300px>
 			<img id='img8' src="media/8.jpeg" height=300px>
 			<p>Hi, I’m Justin Johnson. I began my piano journey at age 16, inspired by the music of great artists and the passion they shared.
 				 I taught myself through YouTube and hours of daily practice. Now, at 22, that passion has only grown —
@@ -130,9 +150,9 @@
 				<li>Youtube: <a href="https://www.youtube.com/channel/UCxxmTvadfoBR6OEH8Q2KFXw" target="_blank">My channel</a></li>
 			</ul>
 			<h2>Or</h2>
-			<p>Send me a message down below (page will redirect): </p>
+			<p>Send me a message down below! Be sure to leave me an email I can contact you with. (page will redirect): </p>
 			<form id="myform" action="https://formspree.io/f/xanegkle" method="POST" target="_blank">
-			  <input type="text" name="message" id="messageInput" required>
+			  <textarea name="message" id="messageInput" placeholder="Send me a message here..."></textarea>
 			  <button type="submit">Send</button>
 			</form>
 
@@ -141,5 +161,6 @@
 	</div>
 	</div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="script.js"></script>
 </html>
